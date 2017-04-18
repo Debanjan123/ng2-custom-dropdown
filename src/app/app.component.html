@@ -1,0 +1,14 @@
+<h1>
+     {{title}}</h1>
+        <ng-select
+                
+                title="Select Your Location"
+                [items]="OPTIONS_BASIC"
+                [addFresh]="true"
+                [maxdisplay]="4"
+                [(ngModel)]="edit"
+                (onAdd)="onFreshData($event)"
+               >
+            </ng-select>
+             <input type="button" class="button" value="Check Selrcted Value" (click)="selectedOption()" >
+            
